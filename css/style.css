@@ -423,4 +423,17 @@ header {
 
 /* 5. Projects */
 
+.projects {
+    padding: 100px 0 100px 0;
+}
 
+.projects__title h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+}
+
+.projects__title {
+    text-align: center;
+}
