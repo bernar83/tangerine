@@ -445,12 +445,14 @@ header {
 .projects__rows {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .projects__project {
-    width: 33%;
+    width: 31%;
     height: 300px;
     position: relative;
+    margin: 10px;
 }
 
 .projects img {
