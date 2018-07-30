@@ -478,3 +478,7 @@ header {
     left: 20px;
     bottom: 20px;
 }
+
+.projects__project a {
+    color: inherit;
+}
