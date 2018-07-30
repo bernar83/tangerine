@@ -433,6 +433,7 @@ header {
 
 .projects__title h3 {
     font-size: 40px;
+    margin-top: 0;
     margin-bottom: 20px;
     line-height: 1.5;
     color: rgb(0, 0, 0);
