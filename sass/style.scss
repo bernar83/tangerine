@@ -342,6 +342,10 @@ header {
                     width: 130px;
                 }
 
+                .blog__posts-post-meta {
+                    margin: 5px;
+                }
+
                 input {
                     color: $white;
                     background-color: $red-orange;
@@ -350,11 +354,14 @@ header {
                     cursor: pointer;
                     -webkit-border-radius: 5px;
                     border-radius: 15px; 
+                }
+
+                form {
                     position: absolute;
-                    top: 35px;
+                    top: 245px;
                     left: 50%;
                     -webkit-transform: translateX(-50%);
-                    transform: translateX(-50%)
+                    transform: translateX(-50%);
                 }
             }
         }

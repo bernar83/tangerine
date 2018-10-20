@@ -242,6 +242,8 @@ header {
           background-color: #F36363;
           color: #ffffff;
           width: 130px; }
+        .blog .blog__posts .blog__posts-post .blog__posts-post-info .blog__posts-post-meta {
+          margin: 5px; }
         .blog .blog__posts .blog__posts-post .blog__posts-post-info input {
           color: #ffffff;
           background-color: #F36363;
@@ -249,9 +251,10 @@ header {
           border: 0 none;
           cursor: pointer;
           -webkit-border-radius: 5px;
-          border-radius: 15px;
+          border-radius: 15px; }
+        .blog .blog__posts .blog__posts-post .blog__posts-post-info form {
           position: absolute;
-          top: 35px;
+          top: 245px;
           left: 50%;
           -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
