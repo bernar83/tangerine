@@ -367,3 +367,43 @@ header {
         }
     }
 }
+
+/* 7. Contact */
+.contact {
+    background-color: #392f2f;
+    position: relative;
+    top: -26px;
+    height: 650px;
+    text-align: center;
+
+    h3 {
+        font-size: 40px;
+        color: $white;
+    }
+
+    .contact__form {
+        input[type=text], input[type=email], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 200px;
+            @media (max-width: 500px) {
+                width: 100%;
+            }
+            background-color: $red-orange;
+            color: $white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+}

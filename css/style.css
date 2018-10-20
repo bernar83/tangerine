@@ -259,4 +259,35 @@ header {
           -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
 
+/* 7. Contact */
+.contact {
+  background-color: #392f2f;
+  position: relative;
+  top: -26px;
+  height: 650px;
+  text-align: center; }
+  .contact h3 {
+    font-size: 40px;
+    color: #ffffff; }
+  .contact .contact__form input[type=text], .contact .contact__form input[type=email], .contact .contact__form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; }
+  .contact .contact__form input[type=submit] {
+    width: 200px;
+    background-color: #F36363;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; }
+    @media (max-width: 500px) {
+      .contact .contact__form input[type=submit] {
+        width: 100%; } }
+
 /*# sourceMappingURL=style.css.map */
