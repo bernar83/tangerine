@@ -8,13 +8,16 @@
 
 /* 1. Global */
 
+$white: #ffffff;
+$red-orange: #F36363;
+
 body {
     font-family: "Work Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
     color: rgb(130, 130, 130);
-    background: rgb(255, 255, 255);
+    background: $white;
 }
 
 .container {
@@ -33,7 +36,7 @@ h1, h3, h5 {
 
 header {
     background: linear-gradient(to right, rgba(255, 62, 28, 0.5) 0%, rgba(255, 62, 28, 0.63) 26%, darkorange 100%);
-    color: rgb(255, 255, 255);
+    color: $white;
     padding-top: 60px;
     min-height: 450px;
     text-align: center;
@@ -206,7 +209,7 @@ header {
     text-align: center;
     
     h1 {
-        color: #ffffff;
+        color: $white;
         font-weight: 600;
         position: relative;
         top: 50px;
@@ -233,12 +236,12 @@ header {
         margin: auto;
 
         h3 {
-            color: #ffffff;
+            color: $white;
             font-weight: 550;
         }
 
         .reviews__review-card {
-            background: #ffffff;
+            background: $white;
             border-radius: 8px;
             height: 150px;
 
@@ -256,10 +259,103 @@ header {
                 width: 0;
                 height: 0;
                 border: 20px solid transparent;
-                border-top-color: #ffffff;
+                border-top-color: $white;
                 border-bottom: 0;
                 margin-left: -20px;
-                margin-bottom: 30px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+/* 6. Blog */
+.blog {
+    background: #F2F2F2;
+    position: relative;
+    top: -25px;
+    text-align: center;
+    min-height: 800px;
+
+    .container {
+        width: 90%;
+    }
+
+    .blog__title {
+        h3 {
+            font-size: 35px;
+            color: black;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .blog__posts {
+        display: flex;
+        flex-wrap: wrap;
+
+        .blog__posts-post {
+            flex: 1 1 20%;
+            min-height: 500px;
+            margin-right: 20px;
+            margin-left: 20px;
+            @media (max-width: 1160px) {
+                & {
+                    flex: 1 1 50%;
+                    max-width: 100%;
+                    margin: 20px;
+                }
+            }
+
+            .blog__posts-post-img {
+                height: 300px;
+                width: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .blog__posts-post-info {
+                background-color: $white;
+                height: 300px;
+                position: relative;
+
+                h5 {
+                    margin-top: 0;
+                    position: relative;
+                    top: 15px;
+                    font-size: 20px;
+                    color: black;
+                }
+
+                p, form {
+                    position: relative;
+                    top: 15px;
+                }
+
+                .blog__posts-post-info-date {
+                    background-color: $red-orange;
+                    color: $white;
+                    width: 130px;
+                }
+
+                input {
+                    color: $white;
+                    background-color: $red-orange;
+                    padding: 5px 15px; 
+                    border: 0 none;
+                    cursor: pointer;
+                    -webkit-border-radius: 5px;
+                    border-radius: 15px; 
+                    position: absolute;
+                    top: 35px;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%)
+                }
             }
         }
     }

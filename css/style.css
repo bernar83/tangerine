@@ -12,7 +12,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
-  background: white; }
+  background: #ffffff; }
 
 .container {
   width: 60%;
@@ -26,7 +26,7 @@ h1, h3, h5 {
 /* 2. Header */
 header {
   background: linear-gradient(to right, rgba(255, 62, 28, 0.5) 0%, rgba(255, 62, 28, 0.63) 26%, darkorange 100%);
-  color: white;
+  color: #ffffff;
   padding-top: 60px;
   min-height: 450px;
   text-align: center; }
@@ -189,6 +189,71 @@ header {
         border-top-color: #ffffff;
         border-bottom: 0;
         margin-left: -20px;
-        margin-bottom: 30px; }
+        margin-bottom: 32px; }
+
+/* 6. Blog */
+.blog {
+  background: #F2F2F2;
+  position: relative;
+  top: -25px;
+  text-align: center;
+  min-height: 800px; }
+  .blog .container {
+    width: 90%; }
+  .blog .blog__title h3 {
+    font-size: 35px;
+    color: black;
+    margin-bottom: 0; }
+  .blog .blog__title p {
+    font-size: 20px; }
+  .blog .blog__posts {
+    display: flex;
+    flex-wrap: wrap; }
+    .blog .blog__posts .blog__posts-post {
+      flex: 1 1 20%;
+      min-height: 500px;
+      margin-right: 20px;
+      margin-left: 20px; }
+      @media (max-width: 1160px) {
+        .blog .blog__posts .blog__posts-post {
+          flex: 1 1 50%;
+          max-width: 100%;
+          margin: 20px; } }
+      .blog .blog__posts .blog__posts-post .blog__posts-post-img {
+        height: 300px;
+        width: 100%; }
+        .blog .blog__posts .blog__posts-post .blog__posts-post-img img {
+          height: 100%;
+          width: 100%; }
+      .blog .blog__posts .blog__posts-post .blog__posts-post-info {
+        background-color: #ffffff;
+        height: 300px;
+        position: relative; }
+        .blog .blog__posts .blog__posts-post .blog__posts-post-info h5 {
+          margin-top: 0;
+          position: relative;
+          top: 15px;
+          font-size: 20px;
+          color: black; }
+        .blog .blog__posts .blog__posts-post .blog__posts-post-info p, .blog .blog__posts .blog__posts-post .blog__posts-post-info form {
+          position: relative;
+          top: 15px; }
+        .blog .blog__posts .blog__posts-post .blog__posts-post-info .blog__posts-post-info-date {
+          background-color: #F36363;
+          color: #ffffff;
+          width: 130px; }
+        .blog .blog__posts .blog__posts-post .blog__posts-post-info input {
+          color: #ffffff;
+          background-color: #F36363;
+          padding: 5px 15px;
+          border: 0 none;
+          cursor: pointer;
+          -webkit-border-radius: 5px;
+          border-radius: 15px;
+          position: absolute;
+          top: 35px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
 /*# sourceMappingURL=style.css.map */
