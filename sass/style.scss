@@ -407,3 +407,19 @@ header {
         }
     }
 }
+
+/* 8. Footer */
+.footer {
+    text-align: center;
+
+    .footer__nav {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}

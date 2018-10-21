@@ -290,4 +290,15 @@ header {
       .contact .contact__form input[type=submit] {
         width: 100%; } }
 
+/* 8. Footer */
+.footer {
+  text-align: center; }
+  .footer .footer__nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; }
+    .footer .footer__nav li {
+      margin-left: 10px;
+      margin-right: 10px; }
+
 /*# sourceMappingURL=style.css.map */
